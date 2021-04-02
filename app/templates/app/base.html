@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel yari | {% block title %} {% endblock title %} </title>
+    <link rel="stylesheet" href="{% static 'app/bootstrap/css/font-awesome-5.8.1.css' %}">
+    <link rel="stylesheet" href="{% static 'app/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'app/bootstrap/css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'app/bootstrap/css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/bootstrap/css/style.css' %}">
+
+
+
+
+       <link rel="stylesheet" href="{% static 'app/bootstrap/css/footer.css' %}">
+    
+     <link rel="stylesheet" href="{% static 'app/bootstrap/css/cus.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+
+
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-teal">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"> Travel yatri</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#tarvel-navbar">
+                <span class="navbar-toggler-icon"> </span>
+
+            </button>
+       
+          <div class="collapse navbar-collapse" id="tarvel-navbar">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item px-3">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item px-3">
+                    <a href="/about" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a href="/photo" class="nav-link">Gallary</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a href="/booking" class="nav-link">Booking</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a href="customerregistration" class="nav-link">customerregistration</a>
+                  </li>
+                        
+
+                  
+                  
+              </ul>
+             </div>
+          </nav>
+        </div>
+        {% block banner_slider %}
+        {% endblock banner_slider %}
+        {% block Serach %}
+        {% endblock Serach %}
+      
+        {% block main-content %} 
+        {% endblock main-content %}
+        
+       
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mt-5 pt-5 pb-5 footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 col-xs-12 about-company">
+      <h2>Heading</h2>
+      <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+      <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+    </div>
+    <div class="col-lg-3 col-xs-12 links">
+      <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+        <ul class="m-0 p-0">
+          <li>- <a href="#">Lorem ipsum</a></li>
+          <li>- <a href="#">Nam mauris velit</a></li>
+          <li>- <a href="#">Etiam vitae mauris</a></li>
+          <li>- <a href="#">Fusce scelerisque</a></li>
+          <li>- <a href="#">Sed faucibus</a></li>
+          <li>- <a href="#">Mauris efficitur nulla</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-xs-12 location">
+      <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+      <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+      <p class="mb-0"><i class="fa fa-phone mr-3"></i>981158565</p>
+      <p><i class="fa fa-envelope-o mr-3"></i>travelyatri@gmail.com</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col copyright">
+      <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+    <script src="{% static 'app/bootstrap/js/jquery.js' %}"></script>
+    <script src="{% static 'app/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'app/bootstrap/js/bootstrap.min.j' %}"></script>
+    <script src="{% static 'app/bootstrap/js/bootstrap.js' %}"></script>
+
+   <script>
+    $('.carousel').carousel({
+        interval : 2000,
+        pause : 'hover'
+    });
+</script>
+
+</body>
+</html>
