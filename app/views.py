@@ -61,7 +61,7 @@ def loginn (request):
 		user = authenticate(request, username=username, password=password)
 		if user is not None:
 			login(request, user)
-			return HttpResponse("asjhf")
+			return HttpResponse("Thanks for Login")
 		
 		# form = AuthenticationForm(request=request,user=request.POST)
 		# if form.is_valid():
@@ -76,6 +76,7 @@ def loginn (request):
 	form = AuthenticationForm()
 	return render(request, 'app/login.html',{'form':form}) 
 
+	
 
 
 	
