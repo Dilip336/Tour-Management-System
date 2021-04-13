@@ -127,7 +127,7 @@ button {
     padding-bottom: 10%;
     border: 5px solid greenyellow;
     backface-visibility: visible;
-    background-image: url(/images/wow.jpeg);
+    background-image: url(/main/images/wow.jpeg);
 }
 
 .signin-col {
@@ -162,8 +162,9 @@ button {
 
 .or {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(2, 2, 2);
     font-size: 30px;
+    
 }
 
 form {
