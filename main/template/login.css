@@ -127,7 +127,7 @@ button {
     padding-bottom: 10%;
     border: 5px solid greenyellow;
     backface-visibility: visible;
-    background-image: url(/main/images/wow.jpeg);
+    background-image: url(wow.jpeg);
 }
 
 .signin-col {
