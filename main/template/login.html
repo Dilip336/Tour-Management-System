@@ -53,19 +53,12 @@
             </div>
             <p class="or"><b>OR</b></p>
 
-            <form action="/signin">
-                <input class="form" type="text" placeholder="Email address">
-                <br>
-                <input class="form" type="text" placeholder="Password">
+            <form method="post" class="form-group">
+                {% csrf_token %}
+                {{form|crispy}}
+                <p>Don't have an account? Create one <a href="/register">here</a></p>
+                <button type="submit" class="btn btn-success">Login</button>
             </form>
-            <br>
-            <button class="signin-button"><i class="fas fa-sign-in-alt"></i> <b class="signinhere"> Sign In </b>
-            </button>
-            <br>
-            <div class="bottom-signin">
-                <a href="#" class="password-forgot"><b>Forgot password?</b></a>
-                <a href="#" class="create-new-acc-btn"><b>Create New Account</b></a>
-            </div>
             <br>
         </div>
     </div>
