@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="event.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Tours and Travels</title>
+</head>
+
+<body>
+  <header>`
+    <div class="logo">
+      <img src="" alt="logo" class="">
+    </div>
+
+    <div class="menu-toggle"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active"><b>Home</b></a></li>
+        <li><a href="gallery.html"><b>Gallery</b></a></li>
+        <li><a href="destination.html"><b>Destination</b></a></li>
+        <li><a href="aboutus.html"><b>About Us</b></a></li>
+        <li>
+          <form class="search" action="/search" method="GET">
+            <input type="text" placeholder="Search The packages" name="s" id="search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </li>
+        <li><a href="login.html"><b>Log In</b></a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </nav>
+  </header>
+
+  <!-- Image slide -->
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="Bhaktapur Durbar Square.jpg" alt="" class="first-slide">
+
+      </div>
+      <div class="slide">
+        <img src="lake-pokhara.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="janakpur.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="image1.jpg" alt="">
+      </div>
+
+      <!--automatic navigation-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+
+    <!--manual navigation-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </div>
+
+  <!-- Discover Nepal -->
+  <div>
+    <h1 class="discover">Discover Nepal</h1>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="kathmandu valley.jpeg" alt="" height="350px" width="500px">
+        <div class="places"><b>Nyatapola temple - Bhaktapur</b></div>
+      </div>
+      <div class="col">
+        <div class="col1">
+          <img src="chitwan.jpg" alt="" height="166px" width="250px">
+          <div class="places"><b>chitwan</b></div>
+        </div>
+        <br>
+        <div class="col1">
+          <img src="lumbini.jpg" alt="" height="166px" width="250px">
+          <div class="places"><b>lumbini</b></div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col2">
+          <img src="pokhara.jpg" alt="" height="166px" width="250px">
+          <div class="places"><b>pokhara</b></div>
+        </div>
+        <br>
+        <div class="col2">
+          <img src="sagarmatha.jpg" alt="" height="166px" width="250px">
+          <div class="places"><b>sagarmatha</b></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <section class="explore">
+      <button class="explore-more" type="submit"><b>Explore more..</b></button>
+    </section>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Upcoming Events -->
+  <div class="discover">
+    <h1>Upcoming Events</h1>
+  </div>
+
+  <br>
+  <br>
+  <div class="eventslider">
+    <div class="eventslides">
+      <input type="radio" name="radio-btn" id="radio11">
+      <input type="radio" name="radio-btn" id="radio22">
+      <input type="radio" name="radio-btn" id="radio33">
+      <input type="radio" name="radio-btn" id="radio44">
+
+      <div class="eventslide eventfirst">
+        <img src="dashain.jpg" alt="">
+        <p class="desc-events"><b>Dashain</b> <br> <u>Coming soon on October</u> <br><br> This is the longest Hindu
+          festival in Nepal, traditionally celebrated for two weeks with prayers and offerings to Durga, the Universal
+          Mother Goddess.</p>
+
+      </div>
+      <div class="eventslide">
+        <img src="holi.jpg" alt="">
+        <p class="desc-events"><b>Holi</b> <br> <u>Coming soon on March</u> <br><br> There is a symbolic legend to
+          explain why Holi is celebrated as a festival of triumph of good over evil in the honour of Hindu god Vishnu
+          and his devotee Prahlada. ... As the fire roared, the cloak flew from Holika and encased Prahlada, who
+          survived while Holika burned.</p>
+      </div>
+      <div class="eventslide">
+        <img src="tihar.jpg" alt="">
+        <p class="desc-events"><b>Tihar</b> <br> <u>Coming soon on November</u> <br><br> Tihar also known as Deepawali
+          is a Hindu festival. It is celebrated for 5 days. It is celebrated mainly in Nepal and the Indian states of
+          Assam and Sikkim. It is also celebrated in Darjeeling district of West Bengal. It is the festival of lights.
+        </p>
+      </div>
+      <div class="eventslide">
+        <img src="bisket jatra.jpg" alt="">
+        <p class="desc-events"><b>Bisket Jatra</b> <br> <u>Coming soon on April</u> <br><br> Bisket Jatra heralds the
+          start of the Nepali New Year and is celebrated with the most aplomb in Bhaktapur. ... In the evening of the
+          following day (New Year's Day), the pole is pulled down, again in an often-violent tug of war. As the pole
+          crashes to the ground, the New Year officially commences.</p>
+      </div>
+
+      <!--automatic navigation-->
+      <div class="eventnavigation-auto">
+        <div class="eventauto-btn1"></div>
+        <div class="eventauto-btn2"></div>
+        <div class="eventauto-btn3"></div>
+        <div class="eventauto-btn4"></div>
+      </div>
+
+    </div>
+
+    <!--manual navigation-->
+    <div class="eventnavigation-manual">
+      <label for="radio11" class="eventmanual-btn"></label>
+      <label for="radio22" class="eventmanual-btn"></label>
+      <label for="radio33" class="eventmanual-btn"></label>
+      <label for="radio44" class="eventmanual-btn"></label>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Things to do -->
+  <div>
+    <h1 class="thingstodo">Things To Do</h1>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="mountaineering.jpeg" alt="" height="350px" width="500px">
+        <div class="places"><b>Mountaineering</b></div>
+      </div>
+      <div class="col">
+        <div class="col1">
+          <img src="cycling.jpg" alt="" height="166px" width="250px">
+          <div class="places"><b>Cycling</b></div>
+        </div>
+        <br>
+        <div class="col1">
+          <img src="nepal nature enjoy.jpg" alt="" height="166px" width="250px">
+          <div class="places"><b>View Enjoy</b></div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col2">
+          <img src="pashupatinath tour.jpeg" alt="" height="166px" width="250px">
+          <div class="places"><b>Tirtha Yatra</b></div>
+        </div>
+        <br>
+        <div class="col2">
+          <img src="trekking.jpeg" alt="" height="166px" width="250px">
+          <div class="places"><b>Trekking</b></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-column1">
+            <h3 class="tours">Tours & Travels</h3>
+            <br>
+            <p class="contact">Welcome to our "Tours And Travels" website. <br>
+              You are on the right destination to enjoy your weekends. This is one of the best website for tours and
+              travels. You can enjoy any packages you like. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Enjoy here in
+              heaven-Nepal"</p>
+            <div class="contact">
+              <p class="phone-no"><i class="fas fa-phone-square-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp; 01-1234567
+                <br>
+                <i class="fas fa-envelope-square"></i> &nbsp;&nbsp;&nbsp;&nbsp; info@tours&travels.com
+              </p>
+              <p>
+                <i class="fab fa-facebook"></i> &nbsp;&nbsp;&nbsp;&nbsp; <i class="fab fa-twitter"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp; <i class="fab fa-instagram"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-column2">
+            <h3 class="tours">Quick Links</h3>
+            <br>
+            <li class="quicklink"><a class="quicklink-html" href="index.html"><b>Home</b></a></li>
+            <li class="quicklink"><a class="quicklink-html" href="gallery.html"><b>Gallery</b></a></li>
+            <li class="quicklink"><a class="quicklink-html" href="destination.html"><b>Destination</b></a></li>
+            <li class="quicklink"><a class="quicklink-html" href="aboutus.html"><b>About Us</b></a></li>
+          </div>
+
+          <div class="footer-column3">
+            <p class="stayintouch">Stay in Touch</p>
+            <br>
+            <form action="/submit" method="POST">
+              <input class="your-email" type="text" placeholder="Your Email...">
+            </form>
+            <br>
+            <button type="submit" class="subscribe">subscribe</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p><b>copyright &copy;2021: All Rights reserved by Tours And Travels</b></p>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+
+
+</body>
+
+</html>
