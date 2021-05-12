@@ -11,32 +11,33 @@
 <input type="radio" class="btn" name="check"><span>multy city</span>
 
 </div>
-
+  <form  class="" method="POST">
+    {% csrf_token %}
 <div class="booking-form">
 <label >Travelling From </label>
-<input type="text" class="form-control" placeholder="Place Name">
+<input type="text" name="travellingfrom" class="form-control" placeholder="Place Name">
 <label >Travelling To</label>
-<input type="text" class="form-control" placeholder="Place Name">
+<input type="text" class="form-control"  name="travellingto" placeholder="Place Name">
 <div class="input-grp">
 <label >Departing</label>
-<input type="date" class="form-control select-date" >
+<input type="date"  name="departing" class="form-control select-date" >
 </div>
 <div class="input-grp">
 <label >Returing</label>
-<input type="date" class="form-control select-date" >
+<input type="date"  name="returing" class="form-control select-date" >
 
 
 </div>
 
 <div class="input-grp">
 <label >Adults</label>
-<input type="number" class="form-control" value="1" >
+<input type="number"  name="adults" class="form-control" value="1" >
 </div>
 
 
 <div class="input-grp">
 <label >Childern</label>
-<input type="number" class="form-control" value="0" >
+<input type="number"  name="children" class="form-control" value="0" >
 </div>
 
 
@@ -47,13 +48,16 @@
 
 
 <option value="1">Bus</option>
-<option value="1">Airplane</option>
+<option value="1">Aeroplane</option>
 <option value="1">Car</option>
 </select>
 </div>
 <div class="input-group">
-<button type="button" class="btn btn-primary flight">
-submit
+  <button class="contact100-form-btn">
+ Send Message
+ </button>
+</form>
+
 </button>
 </div>
 </div>
