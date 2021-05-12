@@ -133,8 +133,12 @@
         <img src="{{x.photo.url}}" alt="" class="card-img-top" height="200px">
          <div class="card-body">
           <h3 class="card-title">{{x.title}}</h3>
-       <p class="card-text">{{x.content}}</p>
-          <a href="/detail"><button class="btn btn-teal btn-sm">Read More</button></a>
+   
+           <p class="card-text">{{x.content}}</p>
+          <form action="{% url 'detail' x.id %}" method="post">
+          {% csrf_token %}
+          <input class="btn btn-teal btn-sm" type="submit" value="Read more">
+           </form>
          </div>
        </div>
       </div>
