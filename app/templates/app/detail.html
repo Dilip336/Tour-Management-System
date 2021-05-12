@@ -1,0 +1,100 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Booking{% endblock title %}
+
+
+        {% block main-content %} 
+
+<div class="image-aboutus-banner"style="margin-top:70px">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+         <h1 class="lg-text">{{data.title}}</h1>
+         <p class="image-aboutus-para"></p>
+       </div>
+    </div>
+</div>
+</div>
+<div class="container paddingTB60">
+	<div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+               
+                <!-- Preview Image -->
+                
+
+                <hr>
+
+                <!-- Post Content -->
+             <p>{{data.content}}</p>
+                <hr>
+
+               
+               
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Quick Links</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well bgcolor-skyblue">
+                    <h4>Side Widget Well</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div>
+
+            </div>
+
+        </div>
+</div>
+  
+  
+<div class="cta-sektion cta-padding35">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-12">
+                <h3><span class="glyphicon glyphicon-cog "></span> <b>Homes for sale?</b> Explore properties like a pro.</h3>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 Tpadding10">
+             <a href="/booking"> <button type="button" class="btn btn-primary site-btn">Book Now!</button></a>  
+            </div>
+        </div>
+    </div>
+</div>
+		
+	
+         {% endblock main-content %}
