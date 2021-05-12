@@ -17,7 +17,21 @@ class Contact(models.Model):
     email = models.EmailField()
     subject = models.TextField()
 
-    def __str__(self):
+class Booking(models.Model):
+    
+     travellingform = models.CharField(max_length=20)
+     travellingto =  models.CharField(max_length=20)
+     Departing = models.DateTimeField()
+     Returing = models.DateTimeField()
+     Adults = models.IntegerField()
+     Childern = models.IntegerField()
+    #  Travel_Types= (
+    #      ('Bus','Bus')
+    #      ('Aeo','Aeroplane')
+       
+
+    #  )
+     def __str__(self):
         return self.name
     
 
