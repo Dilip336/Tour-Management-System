@@ -8,6 +8,8 @@ urlpatterns = [
     path('photo/', views.photo, name="photo"),
     path('customerregistration/', views.customerregistration, name = "customerregistration"),
     path('loginn/', views.loginn, name="login"),
+    path('detail/<int:id>', views.detail, name="detail"),
+    path('uppermusta/', views.uppermusta, name="uppermusta"),
    
 ]
  

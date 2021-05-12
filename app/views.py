@@ -38,6 +38,17 @@ def about(request):
 
 def booking(request):
     return render(request, 'app/booking.html')
+def detail(request, id):
+	data= Image.objects.get(pk=id)
+	
+	return render(request, 'app/detail.html', {"data": data})
+
+
+def uppermusta(request):
+	return render(request, 'app/uppermusta.html')
+
+	
+
 
 
 def photo(request):
