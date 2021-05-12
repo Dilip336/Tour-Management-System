@@ -1,14 +1,10 @@
-body{
 
 
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(255, 255, 255, 0.5)), url(static/app/images/slider_one.jpeg)
-}
 
-
-.booking-form-box{
+.booking-form-boxs{
 
     max-width: 350px;
-    border: 1px solid #ffffffda;
+    border: 1px solid #000000da;
     margin: 3% auto;
  
 }
@@ -30,7 +26,7 @@ margin: 0 20px;
     width: 15px;
     top: -2px;
     left: -1px;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     position: relative;
    visibility: visible;
    border-radius: 50%;
@@ -38,12 +34,12 @@ margin: 0 20px;
 .radio-btn .btn:checked::after{
 
     content: '';
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: 0.5s;
 }
 .radio-btn span{
 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 12px;
 }
 
@@ -57,12 +53,12 @@ margin: 0 20px;
     margin-bottom: 5px;
     margin-top: 10px;
     font-size: 12px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
 }
 input::placeholder{
 
-    color: #fff !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .input-grp{
@@ -76,7 +72,7 @@ input::placeholder{
     font-size: 12px  !important;
     border-radius: 0  !important;
     background: transparent  !important;
-    color: rgb(255, 255, 255)  !important;
+    color: rgb(0, 0, 0)  !important;
     box-shadow: none  !important;
 }
 
@@ -92,5 +88,5 @@ input::placeholder{
     width: 100%;
     padding: 9px 0;
     font-size: 12px;
-    border: 1px solid #cecece;
+    border: 1px solid #000000;
 }
