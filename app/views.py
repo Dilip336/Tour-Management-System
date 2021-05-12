@@ -37,7 +37,27 @@ def about(request):
     return render(request, 'app/about.html')
 
 def booking(request):
-    return render(request, 'app/booking.html')
+	if request.method=="POST":
+		#contact.contact()
+		 travellingform=request.POST.get('travellingForm')
+		 travellingto=request.POST.get('travellingTo')
+		 departing=request.POST.get('departing')
+		 returing=request.POST.get('returing')
+		 adults=request.POST.get('adults')
+		 children=request.POST.get('children')
+	
+		 #contact.name=name
+		 #contact.email=email
+		 #contact.subject=subject
+		 #Contact.save()
+		 print(travellingform, travellingto,  departing, returing,  adults, children )
+		 #contact = contact(name=name, email=email, subject=subject)
+		 Booking = booking(travellingform=travellingform,travellingTo=travellingto, departing=departing, returing=returing,adults=adults,children=children)
+		 booking.save()
+
+		 return HttpResponse("Thank you for your response, our team will catch you soon")
+	return render(request, 'app/booking.html')
+  
 
 
 def photo(request):
