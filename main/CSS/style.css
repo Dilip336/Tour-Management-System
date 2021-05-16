@@ -228,11 +228,6 @@ button {
     font-family: cursive;
 }
 
-.places {
-    width: auto;
-    text-align: center;
-}
-
 .container {
     width: 100%;
 }
@@ -242,6 +237,107 @@ button {
     float: left;
     width: 100%;
 }
+
+/* image over hover */
+.column1{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.col1{
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.col2{
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+/* .column1 img{
+    width: 100%;
+    height: 100%;
+} */
+.places{
+    color: white;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.column1 .places label{
+    font-size: 20px;
+}
+.column1 .places p{
+    margin: 30px 0;
+    padding: 10px 0;
+    font-size: 15px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.column1 .book-now{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid red;
+    font-size: 12px;
+}
+.col1 .places label{
+    font-size: 10px;
+}
+.col1 .places p{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 8px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.col1 .book-now{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    padding: 3px;
+    border: 2px solid red;
+    font-size: 8px;
+}
+
+.col2 .places label{
+    font-size: 10px;
+}
+.col2 .places p{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 8px;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.col2 .book-now{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    padding: 3px;
+    border: 2px solid red;
+    font-size: 8px;
+}
+
+.column1:hover .places{
+    left: 10px;
+}
+
+.col1:hover .places{
+    left: 10px;
+}
+.col2:hover .places{
+    left: 10px;
+}
+
 
 .col1 {
     padding-left: 10px;
@@ -257,6 +353,10 @@ button {
 
 .explore-more {
     float: right;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
     border-radius: 10px;
     border-width: 5px;
     color: black;

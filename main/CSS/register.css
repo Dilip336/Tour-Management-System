@@ -2,6 +2,7 @@ body {
     margin: 10px 10px;
     padding: 20px 20px 20px 20px;
     background-attachment: fixed;
+    color: greenyellow;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -117,6 +118,16 @@ button {
 }
 
 .g-3 {
+    width: auto;
+    padding-left: 100px;
+}
+
+.country{
+    width: auto;
+    padding-left: 100px;
+}
+
+.form-select{
     width: auto;
     padding-left: 100px;
 }

@@ -295,21 +295,30 @@ button {
     margin-left: 20px;
     margin-right: 20px;
 }
-
-.load-more-img {
-    width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+#more{
+    display: none;
+}
+#loadMore {
+    width: 100%;
+    text-align: center;
 }
 
-.load-more {
-    height: 50px;
+#loadMore button {
     width: 100%;
+    margin: 10px;
+    padding: 8px 45%;
     background-color: rgb(202, 123, 123);
     border-radius: 10px;
     border: 3px solid rgb(77, 72, 65);
-    color: rgb(15, 19, 240);
+    color: rgb(89, 0, 255);
     font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+}
+#loadMore a:hover {
+    background-color: #00d9ff;
+    color: black;
+    transition: 1s;
 }
 
 /* footer */

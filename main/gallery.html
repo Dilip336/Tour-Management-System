@@ -35,7 +35,6 @@
               <button type="submit"><i class="fas fa-search"></i></button>
             </form>
           </li>
-          <li><a href="login.html"><b>Log In</b></a></li>
         </ul>
       </div>
     </nav>
@@ -91,13 +90,13 @@
   <!-- 2nd column -->
   <div class="container">
     <div class="row">
-      <div class="column1">
+      <div class="column">
         <img src="images/lake-pokhara.jpg" alt="">
         <img src="images/lumbini.jpg" alt="">
         <img src="images/dashain.jpg" alt="">
         <img src="images/nepal nature enjoy.jpg" alt="">
       </div>
-      <div class="column2">
+      <div class="column">
         <img src="images/temple.jpeg" alt="">
         <img src="images/kathmandu valley.jpeg" alt="">
         <img src="images/bisket jatra.jpg" alt="">
@@ -110,10 +109,35 @@
     <img src="images/pokhara.jpg" alt="">
     <img src="images/gaijatra.jpg" alt="">
   </section>
+  <!-- 4th column -->
+  <span id="dots">...</span>
+  <span id="more">
 
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img src="images/trekking.jpeg" alt="">
+          <img src="images/sagarmatha.jpg" alt="">
+          <img src="images/holi.jpg" alt="">
+          <img src="images/image1.jpg" alt="">
+        </div>
+        <div class="column">
+          <img src="images/cycling.jpg" alt="">
+          <img src="images/village.jpg" alt="">
+          <img src="images/Bhaktapur Durbar Square.jpg" alt="">
+          <img src="images/everest.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 5th column -->
+    <section class="third-col-img">
+      <img src="images/images23.jpg" alt="">
+      <img src="images/temple_login.jpeg" alt="">
+    </section>
+  </span>
   <!-- load more images -->
-  <div class="load-more-img">
-    <button type="submit" class="load-more">Load More Images</button>
+  <div id="loadMore">
+    <button onclick="myFunction()" id="myBtn">Load more</button>
   </div>
 
   <!-- footer -->
@@ -167,6 +191,8 @@
   </footer>
 
   <script type="text/javascript" src="home.js">
+  </script>
+  <script type="text/javascript" src="loadmore.js">
   </script>
 
 </body>
