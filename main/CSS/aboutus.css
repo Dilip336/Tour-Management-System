@@ -335,10 +335,14 @@ button {
     }
     /* first full image */
     .aboutus-img {
-        height: 600px;
+        height: 500px;
+        /* display: none; */
     }
     .aboutus-img-desc {
-        height: 600px;
+        color: white;
+        margin-top: -480px;
+        margin-bottom: -200px;
+        font-size: 25px;
     }
     /* footer */
     .tours {
@@ -370,10 +374,13 @@ button {
         margin: auto;
     }
     .aboutus-img {
-        height: 400px;
+        height: 350px;
     }
     .aboutus-img-desc {
-        height: 400px;
+        color: white;
+        margin-top: -320px;
+        margin-bottom: -370px;
+        font-size: 20px;
     }
     /* footer */
     .tours {
@@ -399,5 +406,33 @@ button {
     }
     .copyright {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 450px){
+    /* footer */
+    .tours {
+        font-size: 8px;
+    }
+    .contact {
+        font-size: 6px;
+    }
+    .quicklink {
+        font-size: 8px;
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+    .quicklink-html {
+        font-size: 5px;
+    }
+    .your-email {
+        width: 2cm;
+        height: 15px;
+    }
+    .stayintouch {
+        font-size: 8px;
+    }
+    .copyright {
+        font-size: 8px;
     }
 }

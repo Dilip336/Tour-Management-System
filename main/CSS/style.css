@@ -49,7 +49,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    margin-top: 16px;
+    margin-top: 19px;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     color: black;
@@ -74,7 +74,7 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 input {
-    height: 43px;
+    height: 35px;
     width: 8cm;
     border-width: 3px;
     border-color: rgb(0, 0, 0);
@@ -90,7 +90,7 @@ button {
 
 .toggle-button {
     position: absolute;
-    top: 30px;
+    top: 45px;
     right: 40px;
     display: none;
     flex-direction: column;
@@ -230,58 +230,119 @@ button {
 
 .container {
     width: 100%;
+    height: auto;
+    display: table;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .row {
-    padding: 10px 10px;
-    float: left;
-    width: 100%;
-}
-
-/* image over hover */
-.column1{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.col1{
-    width: 250px;
-    position: relative;
-    overflow: hidden;
-}
-.col2{
-    width: 250px;
-    position: relative;
-    overflow: hidden;
-}
-/* .column1 img{
     width: 100%;
     height: 100%;
-} */
+    margin: 20px;
+}
+
+.column1 {
+    display: table-cell;
+    height: 380px;
+    width: 45%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.column1 img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.column2 {
+    display: table-cell;
+    height: 380px;
+    width: 20%;
+    float: right;
+    margin: 10px;
+}
+.column2-1{
+    height: 48%;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.column2-2{
+    height: 48%;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.column2 img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.column3{
+    display: table-cell;
+    height: 380px;
+    width: 20%;
+    float: right;
+    margin: 10px;
+}
+.column3-1{
+    height: 48%;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.column3-2{
+    height: 48%;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.column3 img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+/* image over hover */
 .places{
+    margin: 10px;
     color: white;
     text-align: justify;
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -150%;
     width: 100%;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
     transition: all 1s;
 }
+
 .column1 .places label{
     font-size: 20px;
 }
 .column1 .places p{
-    margin: 30px 0;
+    margin: 30px;
     padding: 10px 0;
     font-size: 15px;
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 .column1 .book-now{
+    margin: 30px;
     background-color: white;
     color: red;
     text-decoration: none;
@@ -289,17 +350,18 @@ button {
     border: 2px solid red;
     font-size: 12px;
 }
-.col1 .places label{
+
+.column2 .places label{
     font-size: 10px;
 }
-.col1 .places p{
+.column2 .places p{
     margin: 10px 0;
     padding: 10px 0;
     font-size: 8px;
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
 }
-.col1 .book-now{
+.column2 .book-now{
     background-color: white;
     color: red;
     text-decoration: none;
@@ -308,17 +370,17 @@ button {
     font-size: 8px;
 }
 
-.col2 .places label{
+.column3 .places label{
     font-size: 10px;
 }
-.col2 .places p{
+.column3 .places p{
     margin: 10px 0;
     padding: 10px 0;
     font-size: 8px;
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
 }
-.col2 .book-now{
+.column3 .book-now{
     background-color: white;
     color: red;
     text-decoration: none;
@@ -328,34 +390,34 @@ button {
 }
 
 .column1:hover .places{
-    left: 10px;
+    left: 0px;
+    top: 0px;
 }
 
-.col1:hover .places{
-    left: 10px;
+.column2-1:hover .places{
+    left: 0px;
+    top: 0px;
 }
-.col2:hover .places{
-    left: 10px;
+.column2-2:hover .places{
+    left: 0px;
+    top: 0px;
 }
-
-
-.col1 {
-    padding-left: 10px;
+.column3-1:hover .places{
+    left: 0px;
+    top: 0px;
 }
-
-.col2 {
-    padding-left: 10px;
+.column3-2:hover .places{
+    left: 0px;
+    top: 0px;
 }
 
 .explore {
-    padding-right: 50px;
+    float: right;
+    margin-top: 5%;
 }
 
 .explore-more {
-    float: right;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     text-decoration: none;
     border-radius: 10px;
     border-width: 5px;
@@ -363,6 +425,7 @@ button {
     background-color: rgb(255, 5, 213);
     border-color: rgb(83, 106, 238);
     border-style: solid;
+    margin-bottom: 5%;
 }
 
 .explore-more:hover {
@@ -373,10 +436,10 @@ button {
     transition: 0.8s;
 }
 
+/* upcoming events */
 .upcomingevents {
     text-align: center;
-    margin-top: 0px;
-    padding: 5px 0 5px 0;
+    margin-top: 10%;
     width: 100%;
     background-color: rgb(167, 236, 55);
     border: 3px solid black;
@@ -398,8 +461,8 @@ button {
 /* footer */
 
 .footer-container {
-    width: 110%;
-    margin-left: -60px;
+    width: 100%;
+    margin: 20px;
     display: table;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -511,34 +574,7 @@ button {
     input {
         width: 5cm;
     }
-    .row {
-        padding: 10px 0px;
-        margin-left: 10px;
-    }
-    .col img {
-        height: 300px;
-        width: 440px;
-        position: relative;
-    }
-    .col1 {
-        padding-left: 10px;
-    }
-    .col1 img {
-        height: 120px;
-        width: 180px;
-    }
-    .col2 {
-        padding-left: 10px;
-    }
-    .col2 img {
-        height: 120px;
-        width: 180px;
-    }
-    .footer-container {
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
+    
     .quicklink {
         padding-left: 30px;
     }
@@ -581,7 +617,7 @@ button {
     .slider {
         width: 100%;
         height: 80%;
-        margin-bottom: -80px;
+        margin-bottom: 10px;
     }
     .slides {
         width: 500%;
@@ -599,31 +635,68 @@ button {
     .discover {
         margin-top: -100px;
     }
-    .row {
-        width: 110%;
-        padding-left: 30px;
+
+    .column1 {
+        height: 320px;
     }
-    .col {
-        margin-left: -70px;
+    
+    .column2 {
+        height: 320px;
     }
-    .col img {
-        height: 290px;
-        width: 400px;
+    .column3{
+        height: 320px;
     }
-    .col1 {
-        margin-left: 50px;
+
+    /* .column1 .places label{
+        font-size: 20px;
     }
-    .col1 img {
-        height: 120px;
-        width: 160px;
+    .column1 .places p{
+        margin: 30px;
+        padding: 10px 0;
+        font-size: 15px;
+        border-top: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(255, 255, 255);
     }
-    .col2 {
-        margin-left: 30px;
+    .column1 .book-now{
+        margin: 30px;
+        background-color: white;
+        color: red;
+        text-decoration: none;
+        padding: 5px;
+        border: 2px solid red;
+        font-size: 12px;
+    } */
+    
+    /* .column2 .places label{
+        font-size: 10px;
+    } */
+    .column2 .places p{
+        margin: 5px 0;
     }
-    .col2 img {
-        height: 120px;
-        width: 160px;
+    /* .column2 .book-now{
+        background-color: white;
+        color: red;
+        text-decoration: none;
+        padding: 3px;
+        border: 2px solid red;
+        font-size: 8px;
+    } */
+    
+    /* .column3 .places label{
+        font-size: 10px;
+    } */
+    .column3 .places p{
+        margin: 5px 0;
     }
+    /* .column3 .book-now{
+        background-color: white;
+        color: red;
+        text-decoration: none;
+        padding: 3px;
+        border: 2px solid red;
+        font-size: 8px;
+    } */
+
     /* footer */
     .tours {
         font-size: 20px;
@@ -648,33 +721,55 @@ button {
         margin: auto;
     }
     /* Discover nepal */
-    .row {
-        width: 110%;
-        padding-left: 0px;
+    .discover {
+        margin-top: -100px;
     }
-    .col {
-        margin-left: -70px;
+
+    .column1 {
+        height: 260px;
     }
-    .col img {
-        height: 210px;
-        width: 300px;
+    
+    .column2 {
+        height: 260px;
     }
-    .col1 {
-        margin-left: 45px;
-        margin-bottom: -15px;
+    .column3{
+        height: 260px;
     }
-    .col1 img {
-        height: 90px;
-        width: 120px;
+
+    .column1 .places label{
+        font-size: 15px;
     }
-    .col2 {
-        margin-left: 15px;
-        margin-bottom: -15px;
+    .column1 .places p{
+        margin: 20px;
+        padding:0;
+        font-size: 12px;
     }
-    .col2 img {
-        height: 90px;
-        width: 120px;
+    .column1 .book-now{
+        margin: 20px;
     }
+    
+    .column2 .places label{
+        font-size: 8px;
+    }
+    .column2 .places p{
+        margin: 2px 0;
+        font-size: 5px;
+    }
+    .column2 .book-now{
+        font-size: 5px;
+    }
+    
+    .column3 .places label{
+        font-size: 8px;
+    }
+    .column3 .places p{
+        margin: 2px 0;
+        font-size: 5px;
+    }
+    .column3 .book-now{
+        font-size: 5px;
+    }
+
     .thingstodo {
         margin-top: 0px;
     }
@@ -715,35 +810,113 @@ button {
         margin-right: 20px;
     }
     /* Discover nepal */
-    .row {
-        width: 100%;
-        padding-left: 10px;
+    .discover{
+        margin-top: -20px;
     }
-    .col {
-        margin-left: 2%;
-        margin-bottom: 10px;
+    .column1 {
+        height: auto;
+        width: 80%;
+        margin: 30px;
+        margin-top: 0px;
     }
-    .col img {
-        height: 240px;
-        width: 380px;
+    
+    .column2 {
+        height: auto;
+        width: 80%;
+        margin: 30px;
+        margin-top: 0px;
+        float: left;
     }
-    .col1 {
-        margin-left: 2%;
-        margin-bottom: 10px;
+    
+    .column3{
+        height: auto;
+        width: 80%;
+        margin: 30px;
+        margin-top: 0px;
+        float: left;
     }
-    .col1 img {
-        height: 220px;
-        width: 340px;
+    
+    
+    /* image over hover */
+    .places{
+        margin: 5px;
+        height: 90%;
     }
-    .col2 {
-        margin-left: 2%;
-        margin-bottom: 10px;
+    
+    .column1 .places label{
+        font-size: 14px;
     }
-    .col2 img {
-        height: 220px;
-        width: 340px;
+    .column1 .places p{
+        margin: 20px 0;
+        padding: 10px 0;
+        font-size: 10px;
     }
+    .column1 .book-now{
+        font-size: 10px;
+    }
+    
+    .column2 .places label{
+        font-size: 14px;
+    }
+    .column2 .places p{
+        margin: 20px 0;
+        padding: 10px 0;
+        font-size: 10px;
+    }
+    .column2 .book-now{
+        font-size: 10px;
+    }
+    
+    .column3 .places label{
+        font-size: 14px;
+    }
+    .column3 .places p{
+        margin: 20px 0;
+        padding: 10px 0;
+        font-size: 10px;
+    }
+    .column3 .book-now{
+        font-size: 10px;
+    }
+    
+    .column1:hover .places{
+        left: 5px;
+        top: 5px;
+    }
+    
+    .column2-1:hover .places{
+        left: 5px;
+        top: 5px;
+    }
+    .column2-2:hover .places{
+        left: 5px;
+        top: 5px;
+    }
+    .column3-1:hover .places{
+        left: 5px;
+        top: 5px;
+    }
+    .column3-2:hover .places{
+        left: 5px;
+        top: 5px;
+    }
+    
+    .explore {
+        float: right;
+        margin-top: 0px;
+    }
+    
+    .explore-more {
+        padding: 5px;
+        border-width: 3px;
+    }
+
     /* footer */
+    .footer-container {
+        margin-top: -20px;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
     .tours {
         font-size: 10px;
     }
@@ -759,13 +932,44 @@ button {
         font-size: 7px;
     }
     .your-email {
-        width: 3cm;
+        width: 2cm;
         height: 20px;
     }
     .stayintouch {
         font-size: 10px;
     }
+    .subscribe{
+        padding: 5px;
+    }
     .copyright {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 450px){
+    /* footer */
+    .tours {
+        font-size: 8px;
+    }
+    .contact {
+        font-size: 6px;
+    }
+    .quicklink {
+        font-size: 8px;
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+    .quicklink-html {
+        font-size: 5px;
+    }
+    .your-email {
+        width: 2cm;
+        height: 15px;
+    }
+    .stayintouch {
+        font-size: 8px;
+    }
+    .copyright {
+        font-size: 8px;
     }
 }

@@ -394,6 +394,14 @@ button {
         font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    .book-now {
+        height: 30px;
+        padding: 5px;
+        border: 2px solid black;
+        font-size: smaller;
+        color: red;
+    }
+
     /* footer */
     .tours {
         font-size: 15px;
@@ -428,11 +436,22 @@ button {
     }
     .BDS {
         font-size: 15px;
+        margin: 3px;
     }
     .column2 p {
-        font-size: 13px;
+        font-size: 11px;
+        margin: 3px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    .book-now {
+        width: 90%;
+        height: 20px;
+        padding: 3px;
+        border: 2px solid black;
+        font-size: 5px;
+        color: red;
+    }
+
     /* footer */
     .tours {
         font-size: 10px;
@@ -457,5 +476,38 @@ button {
     }
     .copyright {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 450px){
+    .book-now {
+        width: 100%;
+        font-size: 3px;
+    }
+
+    /* footer */
+    .tours {
+        font-size: 8px;
+    }
+    .contact {
+        font-size: 6px;
+    }
+    .quicklink {
+        font-size: 8px;
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+    .quicklink-html {
+        font-size: 5px;
+    }
+    .your-email {
+        width: 2cm;
+        height: 15px;
+    }
+    .stayintouch {
+        font-size: 8px;
+    }
+    .copyright {
+        font-size: 8px;
     }
 }
