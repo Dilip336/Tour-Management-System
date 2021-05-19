@@ -1,6 +1,11 @@
 
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/django,vscode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,vscode,python
+=======
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,django
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,django
+>>>>>>> 08fb42339260d9a49d5d0d6148f046e5cf1ea915
 
 ### Django ###
 *.log
@@ -150,13 +155,21 @@ dmypy.json
 .pytype/
 
 # operating system-related files
+<<<<<<< HEAD
 *.DS_Store #file properties cache/storage on macOS
 Thumbs.db #thumbnail cache on Windows
+=======
+# file properties cache/storage on macOS
+*.DS_Store
+# thumbnail cache on Windows
+Thumbs.db
+>>>>>>> 08fb42339260d9a49d5d0d6148f046e5cf1ea915
 
 # profiling data
 .prof
 
 
+<<<<<<< HEAD
 ### Python ###
 # Byte-compiled / optimized / DLL files
 
@@ -233,3 +246,42 @@ Thumbs.db #thumbnail cache on Windows
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/django,vscode,python
+=======
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,django
+>>>>>>> 08fb42339260d9a49d5d0d6148f046e5cf1ea915
