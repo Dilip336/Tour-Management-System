@@ -1,29 +1,25 @@
 from django.db import models
 from django.conf import settings
 from django.core.validators import MaxLengthValidator
+from django.db.models.fields import CharField
 
 
 # Create your models here.
-class Image(models.Model):
-    photo = models.ImageField(upload_to="myimage")
-    title = models.CharField(max_length=50)
-    content = models.TextField()
-    # id = models.AutoField()
+class Booking(models.Model):
     
-    
-    def __str__(self):
-        return self.title 
-
-class Contact(models.Model):
-    name = models.CharField(max_length=200)
-    email = models.EmailField()
-    subject = models.TextField()
-
-    def __str__(self):
-        return self.name
+     travellingform = models.CharField(max_length=20,null=True)
+     travellingto =  models.CharField(max_length=20,null=True)
+     departing = models.DateTimeField(null=True)
+     returing = models.DateTimeField(null=True)
+     adults = models.IntegerField(null=True)
+     childern = models.IntegerField(null=True)
+     traveltypes = models.CharField(max_length=50,null=True)
 
 
+class Search(models.Model):
 
-
-    
-   
+     title = models.CharField(max_length=100,null=True)
+     image = models.CharField(max_length=100,null=True)
+     description = models.CharField(max_length=1000,null=True)
+     upperclass = models.CharField(max_length=100,null=True)
+     lowerclass = models.CharField(max_length=100,null=True)

@@ -3,13 +3,11 @@ from app import views
 
 urlpatterns = [
     path('', views.home),
-    path('about/', views.about, name=" about page"),
+    path('gallery/', views.gallery, name="gallery"),
     path('booking/', views.booking, name=" booking"),
-    path('photo/', views.photo, name="photo"),
-    path('customerregistration/', views.customerregistration, name = "customerregistration"),
-    path('loginn/', views.loginn, name="login"),
-    path('detail/<int:id>', views.detail, name="detail"),
-    path('uppermusta/', views.uppermusta, name="uppermusta"),
+    path('aboutus/', views.aboutus, name='About'),
+    path("destination/", views.destination, name="destination"),
+    path('search', views.search, name="search"),
    
 ]
  

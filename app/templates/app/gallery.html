@@ -1,0 +1,107 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block banner_slider %}
+
+
+  <!-- Image slide -->
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="{% static 'app/images/Bhaktapur Durbar Square.jpg' %}" alt="" class="img-fluid w-100">
+
+      </div>
+      <div class="slide">
+        <img src="{% static 'app/images/lake-pokhara.jpg' %}" alt="" class="img-fluid w-100">
+      </div>
+      <div class="slide">
+        <img src="{% static 'app/images/janakpur.jpg' %}" alt="" class="img-fluid w-100">
+      </div>
+      <div class="slide">
+        <img src="{% static 'app/images/image1.jpg' %}" alt="" class="img-fluid w-100">
+      </div>
+
+      <!--automatic navigation-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+
+    <!--manual navigation-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </div>
+
+  <div class="gallery-txt">Gallery</div>
+  <!-- 1st column -->
+  <section class="first-col-img">
+    <img src="{% static 'app/images/chitwan.jpg' %}" alt="">
+    <img src="{% static 'app/images/holi.jpg' %}" alt="">
+  </section>
+  <!-- 2nd column -->
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="{% static 'app/images/lake-pokhara.jpg' %}" alt="">
+        <img src="{% static 'app/images/lumbini.jpg' %}" alt="">
+        <img src="{% static 'app/images/dashain.jpg' %}" alt="">
+        <img src="{% static 'app/images/nepal nature enjoy.jpg' %}" alt="">
+      </div>
+      <div class="column">
+        <img src="{% static 'app/images/temple.jpeg' %}" alt="">
+        <img src="{% static 'app/images/kathmandu valley.jpeg' %}" alt="">
+        <img src="{% static 'app/images/bisket jatra.jpg' %}" alt="">
+        <img src="{% static 'app/images/mountaineering.jpeg' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 3rd column -->
+  <section class="third-col-img">
+    <img src="{% static 'app/images/pokhara.jpg' %}" alt="">
+    <img src="{% static 'app/images/gaijatra.jpg' %}" alt="">
+  </section>
+  <!-- 4th column -->
+  <span id="dots">...</span>
+  <span id="more">
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img src="{% static 'app/images/trekking.jpeg' %}" alt="">
+          <img src="{% static 'app/images/sagarmatha.jpg' %}" alt="">
+          <img src="{% static 'app/images/holi.jpg' %}" alt="">
+          <img src="{% static 'app/images/image1.jpg' %}" alt="">
+        </div>
+        <div class="column">
+          <img src="{% static 'app/images/cycling.jpg' %}" alt="">
+          <img src="{% static 'app/images/village.jpg' %}" alt="">
+          <img src="{% static 'app/images/Bhaktapur Durbar Square.jpg' %}" alt="">
+          <img src="{% static 'app/images/everest.jpg' %}" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 5th column -->
+    <section class="third-col-img">
+      <img src="{% static 'app/images/images23.jpg' %}" alt="">
+      <img src="{% static 'app/images/temple_login.jpeg' %}" alt="">
+    </section>
+  </span>
+  <!-- load more images -->
+  <div id="loadMore">
+    <button onclick="myFunction()" id="myBtn">Load more</button>
+  </div>
+
+         {% endblock banner_slider %}
