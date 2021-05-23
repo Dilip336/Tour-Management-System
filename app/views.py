@@ -41,7 +41,7 @@ def aboutus(request):
 	return render(request, 'app/aboutus.html')
 def destination(request):
 	return render(request, 'app/destination.html')
-	
+#search funct	
 def search(request):
 	query = request.POST['s']
 	obj = Search.objects.all()
